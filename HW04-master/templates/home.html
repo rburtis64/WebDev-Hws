@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+{%block content%}
+<h1>Student Grades System</h1>
+<form method="POST" action="">
+      Name: <input type="text" name="name"> <br><br>
+      Grade: <input type="number" name="grade"><br><br>
+             <input type="submit" value="Add">
+    </form>
+
+<form method="GET" action="">
+
+    <br>
+    <button class="button">
+    <a href="{{ url_for('list') }}">Student List</a>
+    </button>
+    <br>
+
+    <br>
+    <button class="button">
+    <a href="{{ url_for('passing') }}">Passing Student </a>
+    </button>
+    <br>
+</form>
+
+
+<form method="POST" action="./delete" >
+    <br><br>
+    Delete Student (id)
+    <input type="text" name="id">
+    <br><br>
+
+    <input class="button" type="submit" value="Delete">
+</form>
+
+<form method="POST" action="./update" >
+    <br><br>
+    Update Student (id)
+    <input type="text" name="id">
+    <input type="text" name="grade">
+    <br><br>
+
+    <input class="button" type="submit" value="Update">
+</form>
+
+
+
+{%endblock%}
+</body>
+</html>

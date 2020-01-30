@@ -1,0 +1,13 @@
+   <body>
+   {%block content%}
+   <h1>Student registery</h1>
+
+
+   {% for student in all_students%}
+   <p>
+      {{student.name}} {{student.grade}}
+   </p>
+   {%endfor%}
+
+   {%endblock%}
+   </body>

@@ -1,0 +1,13 @@
+<body>
+{%block content%}
+<h1>Passing Students</h1>
+
+
+{% for s in passing_Students%}
+<p>
+   {{student.name}} {{student.grade}}
+</p>
+{%endfor%}
+
+{%endblock%}
+</body>

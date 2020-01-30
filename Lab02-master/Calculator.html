@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css">
+    </head>
+    <body>
+        <div id='calc'>
+          <form name="calculator">
+            <input type="text" name="answer" />
+            <br>
+            <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
+            <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
+            <input type="button" value=" 3 " onclick="calculator.answer.value += '3'" />
+            <input type="button" value=" + " onclick="calculator.answer.value += '+'" />
+            <br/>
+            <input type="button" value=" 4 " onclick="calculator.answer.value += '4'" />
+            <input type="button" value=" 5 " onclick="calculator.answer.value += '5'" />
+            <input type="button" value=" 6 " onclick="calculator.answer.value += '6'" />
+            <input type="button" value=" - " onclick="calculator.answer.value += '-'" />
+            </br>
+            <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" />
+            <input type="button" value=" 8 " onclick="calculator.answer.value += '8'" />
+            <input type="button" value=" 9 " onclick="calculator.answer.value += '9'" />
+            <input type="button" value=" x " onclick="calculator.answer.value += '*'" />
+            </br>
+            <input type="button" value=" c " onclick="calculator.answer.value = ''" />
+            <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
+            <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
+            <input type="button" value=" / " onclick="calculator.answer.value += '/'" />
+            </br>
+            <input type="button" value=" &#8730; " onclick="calculator.answer.value = square_root() " />
+            <input type="button" value=" sin " onclick="calculator.answer.value = sin_function() " />
+            <input type="button" value=" cos " onclick="calculator.answer.value = cos_function() " />
+            <input type="button" value=" tan " onclick="calculator.answer.value = tan_function() " />
+            <input type="button" value=" ^ " onclick="calculator.answer.value = powerOf() " />
+          </form>
+          </div>
+      <script type="text/javascript">
+      function square_root(){
+        document.getElementById("answer").value = Math.sqrt(document.getElementsById('answer').value);
+      }
+      function sin_function(){
+        document.getElementById("answer").value = Math.sin(document.getElementsById('answer').value);
+      }
+      function  cos_function(){
+        document.getElementById("answer").value = Math.cos(document.getElementsById('answer').value);
+      }
+      function tan_function(){
+        document.getElementById("answer").value = Math.tan(document.getElementsById('answer').value);
+      }
+      </script>
+    </body>
+</html>

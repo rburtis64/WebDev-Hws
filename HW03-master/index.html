@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="all" href="playingCards.ui.css"/>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+  <div id="container">
+
+    <h1>Poker Hand API</h1>
+    <br>
+    <div id="error"></div>
+    <input type="button" id="shuffler" value="shuffle" />
+    <input type="button" id="draw" value="draw a card" />
+    <input type="button" id="setTable" value="Set the Table" />
+    <input type="button" id="reset" value="Reset" />
+
+    <h2>Table</h2>
+    <div id="cardDeck"></div>
+    <br />
+
+    <h2>Your Hand</h2>
+    <div id="yourHand"></div>
+    <br>
+
+    <h2>Hands Available</h2>
+    <div id="handResult"></div>
+    <br>
+    
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="playingCards.js"></script>
+    <script type="text/javascript" src="playingCards.ui.js"></script>
+
+</body>
+</html>
